@@ -8,12 +8,6 @@ class BobaList extends React.Component {
   	}
   }
 
-
-  componentDidMount() {
-  	/*fetch the data in this component for now*/
-  
-  }
-
   render() {
   	return (
   	  <div className='boba-container'>

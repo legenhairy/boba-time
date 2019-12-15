@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
   
@@ -11,13 +12,16 @@ class Header extends React.Component {
 
   render() {
   	return (
-  	  <div>
-  	  	<p>Sign In</p>
-  	  	<p>Sign Out</p>	
+  	  <div className='header'>
+  	  	<NavLink to="/signin">
+          Sign In
+        </NavLink>
+        <NavLink to="/signup">
+          Sign Up
+        </NavLink>
   	  </div>
   	)
   }
 }
 
-
-export const Header;
+export default Header;
